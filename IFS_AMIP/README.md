@@ -29,7 +29,7 @@ For the preliminary runs, you can explore available variables through the *metad
 In preliminary runs SST and SIC were taken from the OSTIA dataset (also available under #OBSERVATIONS), while for the production runs ESA-CCI v3 was used instead for better data quality (especially in the early period).
 
 ## Table of experiments available on DKRZ Levante:
-Note that short (< 1 year) tco2559 (~4.4 km) runs were conducted, these are not at the moment available on Levante. Please get in touch if interested.
+Note that short (<= 14 months) tco2559 (~4.4 km) and tco3999 (~2.8 km) runs were conducted, and some of the data is in the EERIE catalog, as well as in the catalogs of [nextGEMS]([url](https://github.com/nextGEMS/catalog)) and the [2025 Global Hackathon]([url](https://github.com/digital-earths-global-hackathon/catalog)). The tco2559 runs use the same bundle as the production runs, with some additional output (hourly, healpix). The tco3999 run was run using the nextGEMS bundle used for the IFS-FESOM tco3999 run. Versions with v20250101 were run with reduced cloud base mass flux, following nextGEMS. Please get in touch for more information. 
 
 | Catalogue | Experiment | Version | Resolution | Expver | Runname (deprecated)  | Date Range  |  SST      |
 |-----------|------------|---------|------------|--------|-----------------------|-------------|-----------|
@@ -38,6 +38,10 @@ Note that short (< 1 year) tco2559 (~4.4 km) runs were conducted, these are not 
 | ifs&#8209;amip&#8209;tco1279 | hist-c-0-a-lr20 | v20240901 | tco1279 (~9km) | 0003 | -- | 1980 - 2023 | ESA-CCI v3, anomalies smoothed with 20 x Rossby radius |
 | ifs-amip-tco399 | hist-c-0-a-lr20 | v20240901 | tco399 (~28km) | 0004 | -- | 1980 - 2023 | ESA-CCI v3, anomalies smoothed with 20 x Rossby radius |
 | ifs-amip-tco399 | hist-c-lr20-a-0 | v20240901 | tco399 (~28km) | 0006 | -- | 1980 - 2023 | ESA-CCI v3, climatology smoothed with 20 x Rossby radius |
+||
+| ifs&#8209;amip&#8209;tco2559 | hist | v20240901 | tco2559 (~4.4km) | 0008 | -- | 2020 - 2020-06 | ESA-CCI v3 |
+| ifs&#8209;amip&#8209;tco2559 | hist | v20250101 | tco2559 (~4.4km) | 0007 | -- | 2020 - 2021-02 | ESA-CCI v3 |
+| ifs&#8209;amip&#8209;tco3999 | hist | v20250101 | tco3999 (~2.8km) | huy1 | -- | 2020 - 2021-02 | ESA-CCI v3 |
 ||
 | ifs-amip-tco399 | hist | v20240304 | tco399 (~28km) | iabh | amip-hist-esav3      | 2020 - 2021-09 | unfiltered OSTIA SST
 | ifs-amip-tco399 | hist-c-0-a-lr30 | v20240304 | tco399 (~28km) | iaou | amip-hist-esav3-c-0-a-lr30 | 2020 | OSTIA SST, with daily *anomalies* smoothed with 30 x Rossby radius
@@ -54,6 +58,7 @@ Dates are inclusive (only year implies full year available, year-month implies f
 
 ## Versions:
 * v20240901: Production runs, should be used unless otherwise indicated.
+* v20250101: Like production runs (v20240901), except with "reduced cloud base mass flux", like in NextGEMS and DestinE climateDT.
 * v20231006: Preliminary runs for the 2023 EERIE GA & Hackathon using NextGEMS cycle 3 configuration using OSTIA SST
 * v20231106: Preliminary runs for the 2023 EERIE GA & Hackathon using prepIFS based on IFS CY48R1.1 using OSTIA SST
 * v20240304: Preliminary runs for the 2024 Joing EERIE/nextGEMS Hackathon using prepIFS based on IFS CY48R1.1 using ESA-CCI v3 SST

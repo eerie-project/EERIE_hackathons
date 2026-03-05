@@ -1,4 +1,4 @@
-# Repository of the first EERIE hackathon
+# Repository of the EERIE hackathons
 
 This repo contain infromation necessary for data access, and examples of data processing for EERIE hackathons.
 
